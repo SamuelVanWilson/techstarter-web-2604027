@@ -105,6 +105,22 @@ nav a:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
+button#checkSeatBtn {
+  background: #b9ae0b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button#checkSeatBtn:hover {
+  background: #9d9309;
+}
+
 figure {
   margin: 1rem 0;
 }
