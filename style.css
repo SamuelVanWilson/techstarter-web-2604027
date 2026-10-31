@@ -105,7 +105,32 @@ nav a:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-button#checkSeatBtn {
+.registration-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.registration-card label {
+  font-weight: 700;
+}
+
+.registration-card input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+}
+
+.registration-card input:focus-visible {
+  outline: 3px solid #b9ae0b;
+  outline-offset: 1px;
+}
+
+.registration-card button[type="submit"] {
+  align-self: flex-start;
   background: #b9ae0b;
   color: white;
   border: none;
@@ -117,8 +142,33 @@ button#checkSeatBtn {
   transition: background 0.2s ease;
 }
 
-button#checkSeatBtn:hover {
+.registration-card button[type="submit"]:hover {
   background: #9d9309;
+}
+
+.status {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid currentColor;
+}
+
+.status.neutral {
+  color: #4b5563;
+  background: #f3f4f6;
+  opacity: 0.8;
+}
+
+.status.success {
+  color: #166534;
+  background: #f0fdf4;
+  font-weight: 700;
+}
+
+.status.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  font-weight: 700;
 }
 
 figure {
