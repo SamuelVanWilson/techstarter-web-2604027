@@ -12,12 +12,13 @@
     <div class="header-container">
       <p class="subtitle">PROJECT APLIKASI WEB</p> 
       <h1>TechStarter Day 2026</h1> 
-      <p>Satu Web, Banyak Layar — Layout Responsif</p> 
+      <p>Data yang Tidak Boleh Hilang — CRUD dan localStorage</p> 
     </div>
 
     <nav aria-label="Navigasi utama"> 
       <a href="#tentang">Tentang</a>
-      <a href="#registration">Cek Kursi</a>
+      <a href="#registration">Registrasi</a>
+      <a href="#daftar">Daftar</a>
       <a href="#agenda">Agenda</a> 
       <a href="#manfaat">Manfaat</a> 
       <a href="#kontak">Kontak</a> 
@@ -38,20 +39,29 @@
       </section>
 
       <section id="registration" class="card registration-card" aria-labelledby="registrationTitle">
-        <h2 id="registrationTitle">Cek Ketersediaan Kursi</h2>
+        <h2 id="registrationTitle">Registrasi Peserta</h2>
 
-        <form id="seatForm">
-          <label for="seatRequest">Jumlah kursi yang dibutuhkan</label>
-          <input
-            id="seatRequest" name="seatRequest" type="number" min="1"
-            step="1" required
-          >
-          <button type="submit">Cek Kursi</button>
+        <form id="registrationForm">
+          <label for="participantName">Nama peserta</label>
+          <input id="participantName" name="participantName" type="text" required maxlength="60">
+
+          <label for="seatRequest">Jumlah kursi</label>
+          <input id="seatRequest" name="seatRequest" type="number" min="1" step="1" required>
+
+          <div class="form-actions">
+            <button type="submit" id="submitButton">Simpan Registrasi</button>
+            <button type="button" id="cancelEditButton" hidden>Batal Edit</button>
+          </div>
         </form>
 
-        <p id="seatMessages" class="status neutral" aria-live="polite">
-          
+        <p id="seatMessage" class="status neutral" aria-live="polite">
         </p>
+      </section>
+
+      <section id="daftar" class="card registration-list-card" aria-labelledby="registrationListTitle">
+        <h2 id="registrationListTitle">Daftar Registrasi</h2>
+        <p id="registrationSummary">Belum ada registrasi.</p>
+        <ul id="registrationList"></ul>
       </section>
 
       <section id="agenda" class="card"> 

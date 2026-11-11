@@ -194,6 +194,69 @@ footer p {
   margin: 0.25rem 0;
 }
 
+/* ===== Pertemuan 8: registrasi, daftar, tombol aksi ===== */
+.registration-card [hidden] {
+  display: none;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.registration-card button[type="button"] {
+  background: white;
+  color: #1f2937;
+  border: 1px solid #9ca3af;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.registration-card button[type="button"]:hover {
+  background: #f3f4f6;
+}
+
+#registrationSummary {
+  font-weight: 700;
+}
+
+.registration-list-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.registration-list-card li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.registration-list-card li:last-child {
+  border-bottom: none;
+}
+
+.registration-list-card li button {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+  background: white;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.registration-list-card li button:hover {
+  background: #f3f4f6;
+}
+
+.registration-list-card li button:last-child {
+  color: #b91c1c;
+  border-color: #b91c1c;
+}
+
 @media (max-width: 700px) {
   header {
     text-align: center;
